@@ -2,6 +2,10 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
 }
+ 
+* {
+    box-sizing: border-box;
+}
 
 .contenedor {
     width: 1440px;
@@ -87,6 +91,28 @@ body {
     color: hsl(0, 0%, 59%);
     margin: 30px 0;
     font-size: 12px;
+}
+@media screen and (max-width: 480px) {
+    .contenedor{
+        width: 375px;
+    }
+
+    .form_email, .btn, .form {
+        display: block;
+        width: 100%;
+    }
+
+    .titulo {
+        text-align: center;
+    }
+
+    .ilustracion {
+        width: 100%;
+    }
+
+    .btn {
+        margin-top: 15px;
+    }
 }
 
 
